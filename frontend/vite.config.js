@@ -13,4 +13,10 @@ export default defineConfig({
       external: ['react-router-dom', 'react-toastify','react-toastify/dist/ReactToastify.css'], // Externalize if necessary
     },
   },
+    resolve: {
+      alias: {
+        '@': '/src'
+      }
+    }
+  
 });
