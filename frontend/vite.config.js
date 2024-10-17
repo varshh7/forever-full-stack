@@ -10,7 +10,7 @@ export default defineConfig({
   build: {
     sourcemap: true,  // Enable source maps for both development and production
     rollupOptions: {
-      external: ['react-router-dom'], // Externalize only react-router-dom
+      external: ['react-router-dom', 'react-toastify', 'react-toastify/dist/ReactToastify.css'], // Externalize if necessary
     },
   },
 });
