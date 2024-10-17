@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,9 +8,9 @@ export default defineConfig({
     port: 5174,  // Set server port to 5174
   },
   build: {
-    sourcemap: true,
+    sourcemap: true,  // Enable source maps for both development and production
     rollupOptions: {
-      external: ['react-router-dom'], // Externalize if necessary
-    },  // Enable source maps for both development and production
-  }
-})
+      external: ['react-router-dom', 'react-toastify'], // Externalize if necessary
+    },
+  },
+});
