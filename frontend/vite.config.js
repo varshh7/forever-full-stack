@@ -8,6 +8,9 @@ export default defineConfig({
     port: 5174,  // Set server port to 5174
   },
   build: {
-    sourcemap: true,  // Enable source maps for both development and production
+    sourcemap: true,
+    rollupOptions: {
+      external: ['react-router-dom'], // Externalize if necessary
+    },  // Enable source maps for both development and production
   }
 })
