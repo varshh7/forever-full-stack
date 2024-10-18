@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       // Externalize axios to avoid bundling it
-      external: ['axios','react-toastify']
+      external: ['axios']
     }
   }
 });
